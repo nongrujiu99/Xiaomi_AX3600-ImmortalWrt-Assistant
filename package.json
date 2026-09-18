@@ -1,0 +1,50 @@
+{
+  "name": "ax3600-immortalwrt-assistant",
+  "version": "1.1.1",
+  "private": true,
+  "description": "Xiaomi AX3600 ImmortalWrt one-click deployment assistant",
+  "main": "electron/main.cjs",
+  "author": "AX3600 Assistant",
+  "license": "UNLICENSED",
+  "scripts": {
+    "firmware": "node scripts/download-firmware.cjs",
+    "dev": "electron .",
+    "pack": "electron-builder --dir --win x64",
+    "dist": "electron-builder --win portable --x64"
+  },
+  "devDependencies": {
+    "electron": "^38.1.2",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "com.ax3600.immortalwrt.assistant",
+    "productName": "AX3600 ImmortalWrt 一键助手",
+    "asar": true,
+    "asarUnpack": [
+      "resources/**/*"
+    ],
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "electron/**/*",
+      "renderer/**/*",
+      "resources/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "artifactName": "AX3600-ImmortalWrt-Assistant-${version}-portable.${ext}"
+    }
+  },
+  "dependencies": {
+    "ssh2": "^1.17.0"
+  }
+}

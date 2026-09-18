@@ -1,0 +1,45 @@
+/* Larger, consistent type scale for the Windows desktop build. */
+:root { font-size: 16px; --muted: #5c707a; }
+.topbar { height: 84px; padding: 0 32px; }
+.brand-copy strong { font-size: 20px; }
+.brand-copy > span,.top-safe { font-size: 14px; }
+.version,.eyebrow,.modal-tag,.status-pill { font-size: 12px; }
+.layout { grid-template-columns: 250px minmax(0,1fr); gap: 26px; padding-top: 28px; }
+.side-card { padding: 20px; }
+.side-title,.device-head,.help-card strong { font-size: 15px; }
+.state-row { font-size: 15px; padding: 13px; }
+.side-card p,.quiet-button,.compact .mini-row,.text-button { font-size: 14px; }
+.help-card p { font-size: 13px; }
+.hero-copy,.device-panel { padding: 28px 30px; }
+.hero-copy h1 { font-size: 31px; }
+.hero-copy > p { font-size: 15px; }
+.primary-button,.secondary-button { min-height: 44px; padding: 12px 18px; font-size: 15px; }
+.secondary-button.small { padding: 9px 13px; font-size: 13px; }
+.device-grid label { font-size: 12px; }
+.device-grid span { font-size: 15px; }
+.device-note { font-size: 12px !important; }
+.flow-item { min-height: 48px; padding: 11px 9px; font-size: 12px; }
+.flow-number { width: 25px; height: 25px; }
+.section-heading h2 { font-size: 21px; }
+.section-heading p { font-size: 13px; }
+.tool-card { min-height: 92px; padding: 18px; }
+.tool-copy strong { font-size: 16px; }
+.tool-copy span { font-size: 13px; }
+.safety-bar strong { font-size: 14px; }
+.safety-bar p,.safety-tag { font-size: 12px; }
+.modal { width: min(760px,94vw); }
+.modal-header { padding: 26px 29px 21px; }
+.modal-header h2 { font-size: 25px; }
+.modal-header p { font-size: 14px; }
+.modal-body { padding: 23px 29px; }
+.step { min-height: 55px; padding: 14px; font-size: 14px; }
+.step span { width: 29px; height: 29px; font-size: 12px; }
+.progress-box,.result-box { padding: 18px; }
+.progress-head { font-size: 14px; }
+.progress-box p,.result-box p { font-size: 13px; }
+.modal-footer { padding: 18px 29px 25px; }
+
+@media(max-width:1150px){
+  .layout { grid-template-columns: 230px minmax(0,1fr); }
+  .hero-card { grid-template-columns: 1fr; }
+}

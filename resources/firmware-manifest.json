@@ -1,0 +1,22 @@
+{
+  "product": "ImmortalWrt",
+  "version": "25.12.2",
+  "device": "xiaomi_ax3600",
+  "source": "https://downloads.immortalwrt.org/releases/25.12.2/targets/qualcommax/ipq807x",
+  "releaseReady": true,
+  "hardwareValidated": false,
+  "files": [
+    {
+      "role": "initramfs",
+      "fileName": "immortalwrt-25.12.2-qualcommax-ipq807x-xiaomi_ax3600-initramfs-factory.ubi",
+      "sha256": "be4fa6fdfe0520afc42da7c3494db077f23dad9bc017304a8ee20f2484618a81",
+      "size": 18481152
+    },
+    {
+      "role": "sysupgrade",
+      "fileName": "immortalwrt-25.12.2-qualcommax-ipq807x-xiaomi_ax3600-squashfs-sysupgrade.bin",
+      "sha256": "3ad3f437706853ea797cc77b9ddb2c5a26d20e9a03e40ee87fde411091fbb6b0",
+      "size": 16773394
+    }
+  ]
+}

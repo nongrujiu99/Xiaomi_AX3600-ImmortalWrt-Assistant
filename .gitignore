@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+
+# Compiled application and build caches
+dist/
+.builder-cache/
+.electron-cache/
+.npm-cache/
+
+# Runtime data and logs
+*.log
+backups/
+firmware_cache/
+recovery/
+
+# Local editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Environment and private local settings
+.env
+.env.*
+!.env.example
